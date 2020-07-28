@@ -6,3 +6,126 @@
     font-size: 1.02em;
     font-weight: 400;
 }
+
+.carousel{
+    height: 550px;
+}
+
+.carousel-background{
+    position: absolute;
+     background-color:#7f8c8c;
+}
+
+.carousel-text{
+    font-size: 0.9em; 
+    width: 70%;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center ;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0.7em;
+    line-height: 1.6;
+}
+
+.carousel-h1{
+    letter-spacing: 0.005em;
+    font-size: 2.16em;
+    font-weight: bold;
+    background-color: #e2534b;
+    border-radius: 5px;
+    color: #fff;
+    padding: 0.12em 0.25em 0.2em 0.35em;
+    line-height: 0.9;
+    margin-bottom: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    position: absolute;
+    color:#fff;
+}
+
+.fa-angle-double-left{
+    padding-right: 6px;
+}
+
+.fa-angle-double-right{
+    padding-left: 1px;
+}
+
+.fa-angle-double-left,
+.fa-angle-double-right{
+    font-size: 2.2em;
+}
+
+.carousel-indicators{
+    height: 50px;
+    background-color: #f3f3f3;
+}
+
+.carousel-indicators li{
+    width: 60px;
+    height: 5px;
+    margin: auto 5px 15px;
+    background-color: #b0b8b9;
+    transition: none;
+    opacity: 1;
+}
+
+.carousel-indicators .active{
+    background-color: #e2534b;
+}
+
+@media (min-width: 1400px){
+    .container, .container-lg, 
+    .container-md, .container-sm,
+    .container-xl{
+        max-width: 1214px;
+    }
+}
+
+@media (min-width: 768px){
+
+    .carousel-text{
+        padding: 0.5em 1em 0.8em;
+        max-width: 470px;
+        margin-bottom: 5.95em;
+    }
+
+    .carousel-h1{
+        font-size: 2.76em;
+        padding: 0.02em 0.15em 0.1em 0.25em;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next{
+        bottom:52px;
+        margin: auto 0;
+        transition:none;
+        opacity: 1;
+        width: 50px;
+        height: 60px;
+        background-color: #e8645a;
+        border-bottom: solid 3px #e2534b;
+    }
+
+    .carousel-control-next:focus,
+    .carousel-control-next:hover,
+    .carousel-control-prev:focus,
+    .carousel-control-prev:hover {
+        outline:0;
+        opacity: 1;
+    }
+
+    .carousel-control-prev{
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .carousel-control-next{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+
+}
