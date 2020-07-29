@@ -11,10 +11,23 @@ body{
     background-color: #f3f3f3;
 }
 
+
 .about-header{
-    background-color: #ececec;
     height: auto;
-    /*pattern top*/
+    border-top:solid 2px #f3f3f3;
+    background:     
+    linear-gradient( 90deg,
+    #f3f3f3 10%, 
+    transparent 10%),
+    linear-gradient( 90deg,
+    transparent 40%,
+    #f3f3f3 40%, 
+    #f3f3f3 48%, 
+    transparent 48%);
+    background-size: 5px 7px, 25px 9px;
+    background-repeat: repeat-x;
+    background-position: top left;
+    background-color: #ececec;
 }
 
 .about-h2{
