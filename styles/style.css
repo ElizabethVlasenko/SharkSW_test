@@ -6,3 +6,12 @@
     font-size: 1.02em;
     font-weight: 400;
 }
+
+@media (min-width: 1400px){
+    .container, .container-lg, 
+    .container-md, .container-sm,
+    .container-xl 
+    {
+        max-width: 1214px;
+    }
+}
