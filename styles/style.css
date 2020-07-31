@@ -203,8 +203,9 @@ body{
     outline: none;
 }
 
-.carousel{
-    height: 550px;
+.home-carousel{
+    position: relative;
+    height: 549px;
 }
 
 .carousel-background{
@@ -235,8 +236,8 @@ body{
     margin-bottom: 10px;
 }
 
-.carousel-control-prev,
-.carousel-control-next{
+ .home-prev,
+ .home-next{
     position: absolute;
     color:#fff;
 }
@@ -257,12 +258,14 @@ body{
 .carousel-indicators{
     height: 50px;
     background-color: #f3f3f3;
+    position: absolute;
+    bottom: -1px;
 }
 
 .carousel-indicators li{
     width: 60px;
     height: 5px;
-    margin: auto 5px 15px;
+    margin: auto 5px 14px;
     background-color: #b0b8b9;
     transition: none;
     opacity: 1;
@@ -275,7 +278,7 @@ body{
 .services-container{
     min-height: 440px;
     background-color: #f3f3f3;
-    padding: 50px 0;
+    padding: 50px 5px 0 0;
 }
 
 .services-container .container .row {
@@ -479,7 +482,7 @@ body{
 .client-text{
     margin-top: 10px;
     margin-bottom: 0;
-    padding: 10px 8px 10px 21px;
+    padding:8px 11px 10px 14px;
     background-color: #f8f8f8;
     color: #777;
     border-radius: 5px;
@@ -501,11 +504,11 @@ body{
     border-right-color: #f8f8f8;
     border-top-color: #f8f8f8;
     bottom: 39px;
-    left: 40px;
+    left: 33px;
 }
 
 .about-author{
-    padding: 7px 65px;
+    padding: 7px 57px;
     font-weight: 600;
     font-size: 0.9em;
     color: #777;
@@ -514,10 +517,12 @@ body{
 .clients-container{
     min-height: 240px;
     color:#7f8c8c;
+    padding-top: 13px;
+    padding-bottom: 2px;
 }
 
-.carousel-control-prev,
-.carousel-control-next{
+.clients-container .carousel-control-prev,
+.clients-container .carousel-control-next{
     height: 40px;
     width: 40px;
     position:absolute;
@@ -530,24 +535,24 @@ body{
     opacity: 1;
 }
 
-.carousel-control-next{
+.clients-container .carousel-control-next{
     margin-left: 59px;
 }
 
-.carousel-control-prev:hover,
-.carousel-control-next:hover{
+.clients-container .carousel-control-prev:hover,
+.clients-container .carousel-control-next:hover{
     opacity: 1;
     background-color: #e2534b;
     border-bottom-color: #e2534b;
 }
 
-.carousel-control-prev .fa{
+.clients-container .carousel-control-prev .fa{
     font-size: 1.7em;
     font-weight: 600;
     padding: 0 4px 4px 0;
 }
 
-.carousel-control-next .fa{
+.clients-container .carousel-control-next .fa{
     font-size: 1.7em;
     font-weight: 600;
     padding: 0 0 4px 4px;
@@ -670,19 +675,19 @@ body{
     text-align: left;
     margin-bottom: 0.45em;
     letter-spacing: 0.02em;
-    padding-left: 26px;
+    padding-left: 25px;
     font-size: 0.7em;
     display: block;
     color: #fff;
 }
 
 .footer-item .fa-angle-right{
-    margin-right: 9px;
+    margin-right: 6px;
 
 }
 
 .footer-blog-h6{
-    margin: 24px 0 16px -2px;
+    margin: 25px 0 16px -2px;
     letter-spacing: 0.06em;
     font-size: 1em;
     font-style: italic;
@@ -797,8 +802,8 @@ body{
         padding: 0.02em 0.15em 0.1em 0.25em;
     }
 
-    .carousel-control-prev,
-    .carousel-control-next{
+    .home-prev,
+    .home-next{
         bottom:52px;
         margin: auto 0;
         transition:none;
@@ -809,20 +814,20 @@ body{
         border-bottom: solid 3px #e2534b;
     }
 
-    .carousel-control-next:focus,
-    .carousel-control-next:hover,
-    .carousel-control-prev:focus,
-    .carousel-control-prev:hover {
+    .home-next:focus,
+    .home-next:hover,
+    .home-prev:focus,
+    .home-prev:hover {
         outline:0;
         opacity: 1;
     }
 
-    .carousel-control-prev{
+    .home-prev{
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
     }
 
-    .carousel-control-next{
+    .home-next{
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
     }
@@ -880,7 +885,7 @@ body{
 
     .intro-bg{
         margin: 0 0.4em;
-        padding: 1.36em 0.3em 1.15em 1.6em;
+        padding: 1.16em 0.5em 0.45em 1.4em;
         flex-direction: row;
     }
 
@@ -914,17 +919,19 @@ body{
 
     .about-img{
         position: absolute;
-        top: -203px;
-        margin: 0 8px;
+        top: -206px;
+        margin: 0 5px;
     }
 
     .about-h2{
-        padding-top: 62px;
-        padding-left: 3px;
+        padding-top: 59px;
+        padding-right: 5px;
     }
 
     .about-details .container-fluid{
-        padding-top: 200px;
+        padding-top: 199px;
+        padding-left: 11px;
+        padding-right: 6px; 
     }
     
     .about-h6{
@@ -932,13 +939,17 @@ body{
     }
 
     .about-choose ul{
-        margin-top: 33px;
+        margin-top: 31px;
+    }
+
+    .about-statistic .container{
+        padding-right: 28px;
     }
 
     .statistic-text{
-        padding-top: 10px;
-        padding-left: 19px;
-        margin-bottom: 57px;
+        padding-top: 7px;
+        padding-left: 17px;
+        margin-bottom: 49px;
         text-align: left;
     }
 
@@ -961,8 +972,8 @@ body{
         width: 74.6%;
     }
 
-    .carousel-control-prev,
-    .carousel-control-next{
+    .clients-container .carousel-control-prev,
+    .clients-container .carousel-control-next{
         left: 90.8%;
     }
 
@@ -1023,8 +1034,8 @@ body{
         width: 74.6%;
     }
 
-    .carousel-control-prev,
-    .carousel-control-next{
+    .clients-container .carousel-control-prev,
+    .clients-container .carousel-control-next{
         left: 90.8%;
     }
 
