@@ -7,6 +7,10 @@
     font-weight: 400;
 }
 
+body{
+    background-color: #f3f3f3;
+}
+
 .navbar{
     background-color: #76c7c0;
     min-height: 80px;
@@ -357,6 +361,157 @@
     color: #e2534b;
 }
 
+.about-header{
+    height: auto;
+    border-top:solid 2px #f3f3f3;
+    background:     
+    linear-gradient( 90deg,
+    #f3f3f3 10%, 
+    transparent 10%),
+    linear-gradient( 90deg,
+    transparent 40%,
+    #f3f3f3 40%, 
+    #f3f3f3 48%, 
+    transparent 48%);
+    background-size: 5px 7px, 25px 9px;
+    background-repeat: repeat-x;
+    background-position: top left;
+    background-color: #ececec;
+}
+
+.about-h2{
+    color: #e3716b;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: -0.013em;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+.about-text{
+    color: #777;
+    text-align: center;
+    font-size: 0.74em;
+    color: #777;
+    margin:16px 0 0 0;
+    letter-spacing: -0.015em;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.about-details{
+    position: relative;
+}
+
+.about-details .container-fluid{
+    padding-top: 10px;
+    }
+
+.about-img{
+    position: static;
+    width: 98.8%;
+    margin-top: 20px;
+}
+
+.about-h6{
+    text-align: center;
+    color: #7f8c8c;
+    font-weight: 700;
+    padding-top: 10px;
+    font-size: 1em;
+    letter-spacing: -0.06em;
+    margin-left: -7px;
+}
+
+.about-choose ul{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.choose-items{
+    font-size: 0.7em;
+    color: #777;
+    padding-bottom: 0.53em;
+}
+
+.choose-items .fa-arrow-right{
+    font-size: 0.9em;
+    margin-left: -3px;
+    margin-right: 5px;
+    color:#e1524b ;
+}
+
+.statistic-text{
+    font-size: 0.7em;
+    color: #777;
+    padding:0;
+    padding-bottom: 10px;
+    line-height: 1.8em;
+    letter-spacing: 0.003em;
+    margin: 0;
+    text-align: center;
+}
+
+.statistic-text .statistic-important{
+    color:#e1524b;
+    text-decoration-line: underline;
+}
+
+.about-statistic .container{
+    padding: 0 21px;
+}
+
+.chart-text{
+    color: #7f8c8c;
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.85em;
+    margin-top: 18px;
+}
+
+.about-clients .about-h6{
+    margin:0;
+}
+
+.client-text{
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 10px 8px 10px 21px;
+    background-color: #f8f8f8;
+    color: #777;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-style: italic;
+    line-height: 1.7em;
+    letter-spacing: -0.047em;
+
+}
+
+.client-text span{
+    font-style: normal;
+}
+
+.client-text::after{
+    content: "";
+    position: absolute;
+    border: solid transparent 12px;
+    border-right-color: #f8f8f8;
+    border-top-color: #f8f8f8;
+    bottom: 39px;
+    left: 40px;
+}
+
+.about-author{
+    padding: 7px 65px;
+    font-weight: 600;
+    font-size: 0.9em;
+    color: #777;
+}
+
+
 @media (min-width: 768px){
 
     .carousel-text{
@@ -453,6 +608,54 @@
     .intro-content{
         margin: auto;
     }
+
+    .about-header{
+        height: 400px;
+    }
+
+    .about-text{
+        margin-top: 3px;
+        margin-left: 4px;
+    }
+
+    .about-img{
+        position: absolute;
+        top: -203px;
+        margin: 0 8px;
+    }
+
+    .about-h2{
+        padding-top: 62px;
+        padding-left: 3px;
+    }
+
+    .about-details .container-fluid{
+        padding-top: 200px;
+    }
+    
+    .about-h6{
+        text-align: left;
+    }
+
+    .about-choose ul{
+        margin-top: 33px;
+    }
+
+    .statistic-text{
+        padding-top: 10px;
+        padding-left: 19px;
+        margin-bottom: 57px;
+        text-align: left;
+    }
+
+    .about-clients .about-h6{
+        margin-left: 2px;
+    }
+        
+    .client-text{
+        margin-top: 23px;
+    }
+
 }   
 
 @media (min-width: 1200px){
@@ -488,4 +691,5 @@
     .intro-text{
         max-width: 100%;
     }
+
 }
